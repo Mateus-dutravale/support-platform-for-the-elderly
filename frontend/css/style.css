@@ -1,0 +1,109 @@
+/* Reset básico e configuração padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo geral do corpo */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: black;
+  }
+  
+  /* Container padrão com largura máxima */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Cabeçalho */
+  .topo {
+    background-color: #004e8c;
+    padding: 10px 0;
+    color: white;
+  }
+  
+  /* Logo da esquerda */
+  .logo {
+    height: 60px;
+    float: left;
+  }
+  
+  /* Menu de navegação */
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Seção de banner principal */
+  .banner {
+    background: url('banner.jpg') center/cover no-repeat;
+    color: black;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .noticias {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .noticias h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #004e8c;
+  }
+  
+  .grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .rodape {
+    background-color: #004e8c;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+  }
+  
