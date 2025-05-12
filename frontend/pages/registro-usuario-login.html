@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login do Programa</title>
+  <link rel="stylesheet" href="/support-platform-for-the-elderly/frontend/css/registro-usuario-login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="loginUserId" placeholder="Login do Usuário" required />
+
+    <input type="password" id="loginSenha" placeholder="Senha" required />
+
+    <button onclick="fazerLogin()">Entrar</button>
+    
+    <div class="mensagem" id="mensagemLogin"></div>
+    <p>Não tem uma conta? <a href="registro.html">Registre-se aqui</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
