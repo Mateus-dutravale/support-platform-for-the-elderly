@@ -9,13 +9,39 @@ body {
   height: 100vh;
 }
 
+.login-container-pricipal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.img-box {
+  width: 50%;
+  height: 100%;
+  background-color: #5bb4ff;
+}
+
+.img-box img{
+  width: 100%;
+  height: 100%;
+}
+
+.login-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
 .login-container {
   background-color: white;
-  padding: 30px;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
 }
 
 .login-container p {
@@ -37,6 +63,11 @@ input {
   border-radius: 5px;
   box-sizing: border-box;
 }
+
+input:focus {
+  border-color: red; 
+}
+
 
 button {
   background-color: #0077cc;
