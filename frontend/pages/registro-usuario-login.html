@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="/support-platform-for-the-elderly/frontend/css/registro-usuario-login.css" />
 </head>
 <body>
-  <div class="login-container-pricipal">
+  <main class="login-container-pricipal">
     <div class="img-box">
       <img src="/support-platform-for-the-elderly/frontend/assets/8571039.jpg">
     </div>
     <div class="login-content">
-  <div class="login-container">
+  <form class="login-container">
     <h2>Login</h2>
     <input type="text" id="loginUserId" placeholder="Login do Usuário" required />
 
@@ -21,10 +21,10 @@
     <button onclick="fazerLogin()">Entrar</button>
     
     <div class="mensagem" id="mensagemLogin"></div>
-    <p>Não tem uma conta? <a href="registro.html">Registre-se aqui</a></p>
+    <p>Não tem uma conta? <a href="cadastro-usuario-novo.html" target="_blank">Registre-se aqui</a></p>
+  </form>
   </div>
-  </div>
-</div>
+</main>
 
   <script src="script.js"></script>
 </body>
