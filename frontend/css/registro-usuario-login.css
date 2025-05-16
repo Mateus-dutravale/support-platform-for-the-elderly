@@ -22,7 +22,6 @@ body {
 .img-box {
   width: 50%;
   height: 100%;
-  background-color: #5bb4ff;
 }
 
 .img-box img{
@@ -91,5 +90,63 @@ button:hover {
   margin-top: 10px;
   text-align: center;
 }
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .img-box {
+    display: none;
+  }
+
+  .login-container-pricipal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #007ACC; /* fundo azul VS Code */
+    min-height: 100vh;
+  }
+
+  .login-content {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .login-container h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #007ACC; 
+  }
+
+  .login-container input,
+  .login-container button {
+    font-size: 1rem;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .login-container p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .mensagem {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+
 
 
