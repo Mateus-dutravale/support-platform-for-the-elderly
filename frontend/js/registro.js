@@ -5,6 +5,7 @@ const mensagem = document.getElementById("mensagemLogin");
 
 // ========== Função principal de login ===========
 function fazerLogin() {
+  
   // Evita que o formulário recarregue a página ao clicar em "Entrar"
   event.preventDefault();
 
