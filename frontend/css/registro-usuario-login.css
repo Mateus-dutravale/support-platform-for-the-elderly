@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +46,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 380px;
+  max-width: 450px;
 }
 
 .login-container p {
@@ -103,8 +106,8 @@ button:hover {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #007ACC; /* fundo azul VS Code */
     min-height: 100vh;
+    position: absolute;
   }
 
   .login-content {

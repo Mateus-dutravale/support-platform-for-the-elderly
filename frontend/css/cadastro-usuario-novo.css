@@ -2,19 +2,32 @@
 
 
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
+.img-box {
+  float: left;
+  width: 50%;
+  height: 100px;
+  margin-right: 110px;
+}
+
+.img-box img {
+    width: 100%; 
+    
+}
+
 section {
     max-width: 450px;
-    margin: 50px auto;
+    margin: 50px;
     padding: 50px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    overflow: auto;
 }
 
 h2 {
@@ -26,10 +39,8 @@ form {
     flex-direction: column;
 }
 
-label,
-input,
-button {
-    margin-bottom: 15px;
+label, input {
+    margin-bottom: 10px;
 }
 
 input {
@@ -50,12 +61,19 @@ small {
     font-size: 0.9em;
 }
 
+.button-login {
+  padding: 20px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+
 button {
+    width: 20rem;
     background-color: #0077cc;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -94,20 +112,87 @@ footer {
 }
 
 /* Responsivo */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-        text-align: center;
+/* === TABLETS (768px até 1024px) === */
+
+@media screen and (max-width: 1024px) {
+  .img-box {
+    float: none;
+    width: 100%;
+    margin: 0 auto 50px;
+    text-align: center;
+    height: auto;
+  }
+
+  .img-box img {
+    max-width: 400px;
+    height: auto;
+  }
+
+  section {
+    margin: 80px auto;
+    padding: 100px;
+    width: 50%;
+  }
+
+}
+
+/* === CELULARES (até 767px) === */
+@media screen and (max-width: 767px) {
+  body {
+    padding: 10px;
+  }
+
+  .img-box {
+    display: none;
+  }
+
+  section {
+    margin: 150px auto;
+    padding: 100px;
+    width: 100%;
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  label,
+  input {
+    font-size: 1rem;
+  }
+
+  .mensagemLogin-principal p {
+    font-size: 16px;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+/* === MODO HORIZONTAL EM CELULARES (landscape) === */
+
+  @media screen and (orientation: landscape) and (max-width: 1024px) {
+    .img-box {
+      float: none;
+      width: 40%;
+      margin: 0 auto 30px;
+      height: auto;
     }
 
     section {
-        margin: 10px;
-        padding: 15px;
+      width: 90%;
+      margin: 20px auto;
+      padding: 30px;
     }
 
-    input,
-    button {
-        font-size: 1rem;
+    h2 {
+      text-align: center;
     }
-}
+  }
+

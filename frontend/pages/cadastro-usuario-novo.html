@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="/support-platform-for-the-elderly/frontend/css/cadastro-usuario-novo.css">
 </head>
 <body>
+    <main class="cadastro">
+        <div class="img-box">
+      <img src="/support-platform-for-the-elderly/frontend/assets/grandma-animacao.svg">
+        </div>
     <section id="inscricao">
         <h2>Inscreva-se</h2>
         <form id="formInscricao">
@@ -14,7 +18,7 @@
             <input type="text" id="nome" name="nome" required>
 
             <label for="nome">Sobrenome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required>  
 
             <label for="cpf">CPF:</label>
             <input type="text" id="cpf" name="cpf" required>
@@ -28,15 +32,17 @@
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" required>
 
-            <button type="submit">Finalizar Cadastro</button>
-
+            <div class="button-login">
+                <button type="submit">Finalizar Cadastro</button>
+            </div>
             <div class="mensagemLogin-principal">
                 <div class="mensagem" id="mensagemLogin"></div>
                 <p>Já tem conta? <a href="./registro-usuario-login.html">Conectar-se</a></p>
             </div>
         </form>
-    </section> 
-    
+    </section>
+    </main>
+
      <footer>
         <!--<p>&copy; 2025 SECTI e FAPEMA - Programa de Formação em Tecnologia</p>-->
         <div class="container">
