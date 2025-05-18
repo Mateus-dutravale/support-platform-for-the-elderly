@@ -1,0 +1,101 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* Estilo geral do corpo */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: black;
+  }
+
+
+/* Cabeçalho */
+header {
+  background-color: #004e8c;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  line-height: 1.2; 
+}
+
+ /* Estrutura principal da página */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+ /* Cabeçalho */
+  .topo {
+    background-color: #004e8c;
+    padding: 10px 0;
+    color: white;
+  }
+  
+  /* Logo da esquerda */
+  .logo {
+    height: 60px;
+    float: left;
+  }
+  
+  /* Menu de navegação */
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #ffcc00;
+  }
+
+/* Bloco de informações */
+.info, .mapa {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+.info h2 {
+  color: #004e8c;
+  margin-bottom: 10px;
+}
+
+.info p {
+  line-height: 1.5;
+}
+
+/* Bloco do mapa */
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Rodapé */
+ .rodape {
+    background-color: #004e8c;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }

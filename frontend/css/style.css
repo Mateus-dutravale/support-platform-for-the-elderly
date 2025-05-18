@@ -98,6 +98,11 @@
     border-radius: 6px;
     margin-bottom: 10px;
   }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
   
   .rodape {
     background-color: #004e8c;
