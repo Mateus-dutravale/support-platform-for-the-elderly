@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel do Funcionário</title>
+  <link rel="stylesheet" href="/support-platform-for-the-elderly/frontend/css/style.css" />
+</head>
+<body>
+  <div class="tudo"> 
+
+    <!-- Cabeçalho -->
+    <header class="topo">
+      <div class="container">
+        <img src="logo.png" alt="Logo Governo MA" class="logo" />
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Institucional</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Transparência</a></li>
+            <li><a href="#">Sair</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container painel">
+      <h1>Gerenciamento de Hospitais</h1>
+
+      <button id="btnNovoHospital" class="botao-primario">+ Novo Hospital</button>
+
+      <table class="tabela-hospitais">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Telefone</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="listaHospitais">
+          <!-- Linhas geradas por JS -->
+        </tbody>
+      </table>
+
+      <section id="formHospital" class="formulario-hospital oculto">
+        <h2 id="formTitulo">Adicionar Hospital</h2>
+        <form id="hospitalForm">
+          <label>Nome:</label>
+          <input type="text" id="nomeHospital" required />
+
+          <label>Endereço:</label>
+          <input type="text" id="enderecoHospital" required />
+
+          <label>Telefone:</label>
+          <input type="text" id="telefoneHospital" required />
+
+          <div class="botoes-form">
+            <button type="submit" class="botao-primario">Salvar</button>
+            <button type="button" id="cancelarEdicao" class="botao-secundario">Cancelar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <div class="container">
+        <p>&copy; Grupo</p>
+        <p>Contato</p>
+      </div>
+    </footer>
+
+  </div> 
+</body>
+</html>

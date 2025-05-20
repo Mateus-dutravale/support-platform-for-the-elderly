@@ -40,7 +40,7 @@ function fazerLogin() {
 
     // Redireciona para a página principal após o login
     setTimeout(() => {
-      window.location.href = "index.html";
+      window.location.href = "pagina-usuario.html";
     }, 1000);
   } else {
     mensagem.style.color = "red";
