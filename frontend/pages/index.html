@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DESAFIO 4</title>
   <link rel="stylesheet" href="/support-platform-for-the-elderly/frontend/css/style.css" />
+  <script type="module" src="../js/scripts.js"></script>
+  <script type="module" src="../js/page-hospitais.js"></script>
 </head>
+
 <body>
 
-<!-- Cabeçalho com logo e menu -->
+  <!-- Cabeçalho com logo e menu -->
   <header class="topo">
     <div class="container">
-      <img src="/support-platform-for-the-elderly/frontend/assets/Logo_MA_SECTI_FAPEMA.png" alt="Logo Governo MA" class="logo" />
+      <img src="/support-platform-for-the-elderly/frontend/assets/Logo_MA_SECTI_FAPEMA.png" alt="Logo Governo MA"
+        class="logo" />
       <nav class="menu">
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Notícias</a></li>
-          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="./about.html">Sobre Nós</a></li>
           <li><a href="./registro-usuario-login.html">Login</a></li>
         </ul>
       </nav>
@@ -37,29 +42,30 @@
       <h2>Últimas Notícias</h2>
       <div class="grid-noticias">
 
-         <!-- Cartões de notícia -->
-  <a href="hospital.html?hospital=saojose" class="card-link">
-    <article class="card">
-      <img src="noticia1.jpg" alt="Hospital São José" />
-      <h3>Hospital Municipal São José</h3>
-      <p>Unidade de atendimento com pronto socorro 24h e centro cirúrgico.</p>
-    </article>
-  </a>
-  <a href="hospital.html?hospital=clinicaesther" class="card-link">
-    <article class="card">
-      <img src="noticia2.jpg" alt="Clínica Esther" />
-      <h3>Clínica Esther</h3>
-      <p>Atendimento especializado em pediatria e exames laboratoriais.</p>
-    </article>
-  </a>
-  <a href="hospital.html?hospital=clinicaesther" class="card-link">
-    <article class="card">
-      <img src="noticia3.jpg" alt="Clínica Esther" />
-      <h3>Clínica Esther</h3>
-      <p>Atendimento especializado em pediatria e exames laboratoriais.</p>
-    </article>
-  </a>
-  
+        <!-- Cartões de notícia -->
+        <a href="#" class="card-link" id="servicos">
+          <article class="card">
+            <img src="noticia1.jpg" alt="Consulta Ginecológica" />
+          </article>
+        </a>
+        <a href="#" class="card-link">
+          <article class="card">
+            <img src="noticia2.jpg" alt="Consulta Médica" />
+          </article>
+        </a>
+        <a href="#" class="card-link">
+          <article class="card">
+            <img src="noticia3.jpg" alt="Imunização" />
+
+          </article>
+        </a>
+        <a href="#" class="card-link">
+          <article class="card">
+            <img src="noticia4.jpg" alt="Pronto Atendimento" />
+
+          </article>
+        </a>
+
       </div>
     </section>
   </main>
@@ -71,5 +77,22 @@
       <p>Contato</p>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('.card-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const alt = this.querySelector('img')?.alt?.trim();
+        if (alt) {
+          const url = `hospital.html?exame=${encodeURIComponent(alt)}`;
+          window.location.href = url;
+        } else {
+          alert('Nenhum exame encontrado.');
+        }
+      });
+    });
+  </script>
+
 </body>
+
 </html>
