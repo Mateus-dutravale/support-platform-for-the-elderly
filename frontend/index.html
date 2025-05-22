@@ -83,7 +83,7 @@
         e.preventDefault();
         const alt = this.querySelector('img')?.alt?.trim();
         if (alt) {
-          const url = `hospital.html?exame=${encodeURIComponent(alt)}`;
+          const url = `pages/hospital.html?exame=${encodeURIComponent(alt)}`;
           window.location.href = url;
         } else {
           alert('Nenhum exame encontrado.');
