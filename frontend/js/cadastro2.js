@@ -51,7 +51,7 @@ document.getElementById("formInscricao").addEventListener("submit", async (e) =>
     };
 
     try {
-        const resposta = await fetch("http://localhost:3000/api/usuarios/cadastrar", {
+        const resposta = await fetch("https://dashboard.render.com/web/srv-d0nhg61r0fns73923blg/deploys/dep-d0nhg69r0fns73923btg", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(usuario),

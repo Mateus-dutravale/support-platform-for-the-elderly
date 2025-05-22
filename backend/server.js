@@ -9,7 +9,7 @@ const uri = process.env.MONGODB_URI;
 
 
 const corsOptions = {
-  origin: ["https://support-platform-for-the-elderly-qbhj.vercel.app/"], 
+  origin: ["https://support-platform-for-the-elderly-qbhj.vercel.app"], 
   methods: ["GET", "POST"],
   credentials: true
 };

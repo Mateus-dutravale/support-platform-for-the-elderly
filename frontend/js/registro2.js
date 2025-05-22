@@ -5,7 +5,7 @@ async function fazerLogin(e) {
     const password = document.getElementById("loginSenha").value;
 
     try {
-        const resposta = await fetch("http://localhost:3000/api/usuarios/login", {
+        const resposta = await fetch("https://dashboard.render.com/web/srv-d0nhg61r0fns73923blg/deploys/dep-d0nhg69r0fns73923btg", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ login, password }),
