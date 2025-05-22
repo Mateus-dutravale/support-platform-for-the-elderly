@@ -18,7 +18,7 @@ document.getElementById("hospitalForm").addEventListener("submit", async (e) => 
   const servicos = servicosRaw.split(",").map(s => s.trim());
 
   try {
-    const response = await fetch("https://dashboard.render.com/web/srv-d0nhg61r0fns73923blg/deploys/dep-d0nhg69r0fns73923btg", {
+    const response = await fetch("https://support-platform-for-the-elderly.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nome, endereco, telefone, servicos, mapsURL }),

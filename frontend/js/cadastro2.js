@@ -51,7 +51,7 @@ document.getElementById("formInscricao").addEventListener("submit", async (e) =>
     };
 
     try {
-        const resposta = await fetch("https://dashboard.render.com/web/srv-d0nhg61r0fns73923blg/deploys/dep-d0nhg69r0fns73923btg", {
+        const resposta = await fetch("https://support-platform-for-the-elderly.onrender.com", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(usuario),

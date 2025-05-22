@@ -6,7 +6,7 @@
 //   }
 //   return await response.json();
 // }
-const API_URL = "https://dashboard.render.com/web/srv-d0nhg61r0fns73923blg/deploys/dep-d0nhg69r0fns73923btg"; 
+const API_URL = "https://support-platform-for-the-elderly.onrender.com"; 
 
 export async function buscarHospitaisComExame(exame) {
   const res = await fetch(`${API_URL}/api/hospitais/get?exame=${encodeURIComponent(exame)}`);
