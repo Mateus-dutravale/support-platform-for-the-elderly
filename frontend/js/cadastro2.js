@@ -51,7 +51,7 @@ document.getElementById("formInscricao").addEventListener("submit", async (e) =>
     };
 
     try {
-        const resposta = await fetch("https://support-platform-for-the-elderly.onrender.com", {
+        const resposta = await fetch("https://support-platform-for-the-elderly.onrender.com/api/usuarios/cadastrar", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(usuario),

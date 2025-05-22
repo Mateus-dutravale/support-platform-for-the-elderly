@@ -5,7 +5,7 @@ async function fazerLogin(e) {
     const password = document.getElementById("loginSenha").value;
 
     try {
-        const resposta = await fetch("https://support-platform-for-the-elderly.onrender.com", {
+        const resposta = await fetch("https://support-platform-for-the-elderly.onrender.com/api/usuarios/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ login, password }),
