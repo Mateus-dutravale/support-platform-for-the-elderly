@@ -214,3 +214,38 @@ html, body {
 main {
   flex: 1;
 }
+
+nav.devs {
+  padding: 2rem;
+  background-color: #004e8c; /* fundo claro opcional */
+  text-align: center;
+}
+
+nav.devs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* dois por linha se couber */
+  gap: 1rem;
+  max-width: 800px;
+}
+
+nav.devs li {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav.devs a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+nav.devs a:hover {
+  color: #007bff;
+}

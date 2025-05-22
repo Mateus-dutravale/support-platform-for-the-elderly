@@ -1,5 +1,27 @@
 {
+  "name": "plataforma-saude",
+  "version": "1.0.0",
+  "description": "Projeto de apoio à saúde com MongoDB + Node.js",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "author": "",
+  "license": "MIT",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
     "mongodb": "^6.16.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mateus-dutravale/support-platform-for-the-elderly.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Mateus-dutravale/support-platform-for-the-elderly/issues"
+  },
+  "homepage": "https://github.com/Mateus-dutravale/support-platform-for-the-elderly#readme"
 }
